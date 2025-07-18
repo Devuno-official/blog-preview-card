@@ -1,0 +1,138 @@
+:root{
+--Yellow: hsl(47, 88%, 63%);
+--White: hsl(0, 0%, 100%);
+--Gray-500: hsl(0, 0%, 42%);
+--Gray-950: hsl(0, 0%, 7%);
+
+}
+
+@font-face{
+    font-family: figtree;
+    src: url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,html{
+    width: 100%;
+    height: 100%;
+    background-color: var(--Yellow);
+    font-family: figtree;
+}
+.main{
+    width: 100%;
+   min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.top{
+    width: 25%;
+    min-height: 78vh;
+    background-color: var(--White);
+    text-align: center;
+    border: 1.5px solid var(--Gray-950);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    position: relative;
+    box-shadow: 10px 10px;
+}
+
+.top>img{
+    margin-top: 3vh;
+    width: calc(100% - 12%);
+    border-radius: 15px;
+}
+
+.bottom{
+   width: 100%; 
+   min-height: 45vh;
+   position: absolute;
+   bottom: 0;
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   justify-content: space-evenly;
+   padding-left: 1.5vw;
+}
+
+#txt{
+    width: 30%;
+    min-height: 4.5vh;
+    background-color: var(--Yellow);
+    border-radius: 6px;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#par1{
+    font-weight: 700;
+}
+
+ #par2{
+ font-weight:500;
+}
+
+ #par3:hover{
+    color: var(--Yellow);
+ }
+
+#par3{
+ font-size: 1.3rem;
+}
+
+#par4{
+  width: 100%;
+  position: relative;
+  left: -5%;
+  color: var(--Gray-500);
+}
+
+.name{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#logo{
+   width: 11%;
+   margin-right: 0.8vw;
+}
+
+.name>h3{
+    font-size: 0.89rem;
+}
+
+@media only screen and (max-width :500px){
+.top{
+    width: 85%;
+   min-height: 60vh;
+}
+.bottom{
+    min-height: 33vh;
+    padding-left: 5vw;
+}
+#txt{
+    min-height:3vh ;
+}
+
+#par4{
+    font-size: 1.23rem;
+    left: -3%;
+}
+
+#logo{
+     margin-right:2vw ;
+}
+}
